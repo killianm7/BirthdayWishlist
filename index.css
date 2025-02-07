@@ -9,16 +9,17 @@
     font-family: "Arial", sans-serif;
     background: #c1ecff; /* A light pastel background */
     color: #333;
-    padding: 2rem;
+    padding: 1rem; /* Reduce padding for small screens */
   }
 
   /* ----- Page Container ----- */
   .wishlist-container {
-    max-width: 600px;
+    max-width: 85%;
+    width: 100%;
     margin: 0 auto;
     background: rgb(255, 255, 255);
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
@@ -44,6 +45,8 @@
     border: 1px solid #777778;
     border-radius: 6px;
     transition: background 0.3s;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center-align text */
   }
 
   .gift-item:hover {
