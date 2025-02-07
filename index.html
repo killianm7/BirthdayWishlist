@@ -1,8 +1,111 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Killian's Awesome Birthday Wishlist</title>
+  <style>
+    /* ----- Basic Reset & Body Styling ----- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Arial", sans-serif;
+      background: #c1ecff; /* A light pastel background */
+      color: #333;
+      padding: 2rem;
+    }
+
+    /* ----- Page Container ----- */
+    .wishlist-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgb(255, 255, 255);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #00b3ff;
+    }
+
+    p.intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* ----- Gift Item Styles ----- */
+    .gift-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: #e1e9ff;
+      border: 1px solid #777778;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .gift-item:hover {
+      background: #a0c3ff;
+    }
+
+    .gift-details {
+      flex: 1;
+    }
+
+    .gift-details h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+
+    .gift-details p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* ----- Purchased State ----- */
+    .purchased h2,
+    .purchased p {
+      text-decoration: line-through;
+      color: #aaa;
+    }
+
+    .purchased {
+      background: #fafafa !important;
+    }
+
+    /* ----- Button Styles ----- */
+    .btn {
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+      font-weight: 500;
+    }
+
+    .btn-mark {
+      background: #f66d39;
+      color: #fff;
+    }
+
+    .btn-mark:hover {
+      background: #eb5c28;
+    }
+
+    .btn-mark.purchased-button {
+      background: #888;
+      cursor: default;
+    }
+  </style>
 </head>
 <body>
 
